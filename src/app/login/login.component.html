@@ -3,15 +3,14 @@
 
     <span class="login-title">Login</span>
 
-    <div class=inputs-box>
-      
+    <div class=inputs-box [formGroup]="loginForm">
       <span>Usuário</span>
-      <input type="text">
+      <input type="text" formControlName="user">
       <span>Senha</span>
-      <input type="password">
+      <input type="password" formControlName="passw">
     </div>
 
-    <button mat-raised-button color="primary">
+    <button mat-raised-button color="primary" (click)="login()">
       <span>Login</span>
     </button>
 
