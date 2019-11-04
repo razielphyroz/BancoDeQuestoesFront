@@ -8,12 +8,18 @@ import { MaterialModule } from './material.module';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './shared/header/header.component';
+import { CadQuestoesComponent } from './cad-questoes/cad-questoes.component';
+import { ValQuestoesComponent } from './val-questoes/val-questoes.component';
+import { BuscaQuestoesComponent } from './busca-questoes/busca-questoes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HeaderComponent
+    HeaderComponent,
+    CadQuestoesComponent,
+    ValQuestoesComponent,
+    BuscaQuestoesComponent
   ],
   imports: [
     BrowserModule,
