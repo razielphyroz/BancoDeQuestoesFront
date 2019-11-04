@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main-div {
+  padding: 0px 25px;
+  border: 2px solid rgb(6, 107, 6);
+  background: #036b2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  position: relative;
+
+  .logo {
+    background-image: url(src/assets/images/senai_logo.png);
+    height: auto;
+    width: auto;
+    max-width: 70%;
+    max-height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 235px;
+  }
+  .logo:hover {
+    cursor: pointer;
+  }
+
+  .nav-menu { 
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    width: auto;
+
+    button {
+      align-self: center;
+      border: none;
+      background-color: transparent;
+      border-radius: 3px;
+      text-align: center;
+      height: 90%;
+      width: 170px;
+
+      span {
+        font-size: 17px;
+        color: rgb(224, 224, 224);
+      }
+
+
+    }
+    button:hover {
+      background-color: rgb(9, 73, 9);
+      cursor: pointer;
+    }
+  }
+
+  .user-profile {
+    background-image: url(src/assets/images/fake-user.png);
+    height: auto;
+    width: auto;
+    background-size: contain;
+    
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+  }
+}
