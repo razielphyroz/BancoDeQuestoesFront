@@ -11,6 +11,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { CadQuestoesComponent } from './cad-questoes/cad-questoes.component';
 import { ValQuestoesComponent } from './val-questoes/val-questoes.component';
 import { BuscaQuestoesComponent } from './busca-questoes/busca-questoes.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BuscaQuestoesComponent } from './busca-questoes/busca-questoes.componen
     HeaderComponent,
     CadQuestoesComponent,
     ValQuestoesComponent,
-    BuscaQuestoesComponent
+    BuscaQuestoesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

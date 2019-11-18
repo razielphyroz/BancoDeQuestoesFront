@@ -18,7 +18,7 @@ export class AuthService {
     if (userForm.value.email === 'admin@admin.com' && userForm.value.password === '123123') {
       this.userAutenticated = true;
       this.showMenuEmitter.emit(true);
-      this.router.navigate(['/pesquisa-questao']);
+      this.router.navigate(['/home']);
       console.log('Logado com sucesso');
     }
   }

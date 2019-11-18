@@ -4,9 +4,11 @@ import { CadQuestoesComponent } from './cad-questoes/cad-questoes.component';
 import { ValQuestoesComponent } from './val-questoes/val-questoes.component';
 import { BuscaQuestoesComponent } from './busca-questoes/busca-questoes.component';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'cadastro-questao', pathMatch: 'full'},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'cadastro-questao', component: CadQuestoesComponent},
   {path: 'validacao-questao', component: ValQuestoesComponent},
