@@ -2,16 +2,32 @@
   outline: none;
   margin: 0px;
   border: 0px;
+  box-sizing: border-box;
 }
 
-html, body { 
-  height: 100%; 
-
+html, body {
+  height: 100%;
 }
 
-body { 
-  margin: 0; 
+body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  //border: 1px solid red;
+}
 
+.main-div {
+  background-image: url('src/assets/images/greenboard.png');
+  background-size: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  min-height: 100%;
+
+  .container {
+    padding: 110px 20px 50px 20px;
+    background-color: white;
+    width: 80%;
+    opacity: 0.9;
+    min-height: 100%;
+  }
 }
 

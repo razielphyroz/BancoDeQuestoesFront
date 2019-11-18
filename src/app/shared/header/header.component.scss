@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-.main-div {
+.main-header-div {
   padding: 0px 25px;
   border: 2px solid rgb(6, 107, 6);
   background: #036b2e;
@@ -13,7 +13,8 @@
   align-items: center;
   width: 100%;
   height: 100px;
-  position: relative;
+  position: fixed;
+  z-index: 10;
 
   .logo {
     background-image: url(src/assets/images/senai_logo.png);

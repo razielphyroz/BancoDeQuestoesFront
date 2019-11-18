@@ -5,6 +5,7 @@ import { ValQuestoesComponent } from './val-questoes/val-questoes.component';
 import { BuscaQuestoesComponent } from './busca-questoes/busca-questoes.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: 'cadastro-questao', pathMatch: 'full'},
   {path: 'cadastro-questao', component: CadQuestoesComponent},
   {path: 'validacao-questao', component: ValQuestoesComponent},
   {path: 'pesquisa-questao', component: BuscaQuestoesComponent}
