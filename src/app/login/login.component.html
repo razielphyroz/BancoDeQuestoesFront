@@ -4,10 +4,10 @@
     <span class="login-title">Login</span>
 
     <div class=inputs-box [formGroup]="loginForm">
-      <span>Usuário</span>
-      <input type="text" formControlName="user">
+      <span>E-mail</span>
+      <input type="text" formControlName="email">
       <span>Senha</span>
-      <input type="password" formControlName="passw">
+      <input type="password" formControlName="password">
     </div>
 
     <button mat-raised-button color="primary" (click)="login()">

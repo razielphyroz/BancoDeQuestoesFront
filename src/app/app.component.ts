@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from './services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,17 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
+ 
   title = 'BancoDeQuestoesFront';
+  showHeader = false;
+
+  constructor(
+    private authService: AuthService) {
+  }
+
+  ngOnInit() {
+    this.authService.showMenuEmitter.subscribe(
+      show => this.showHeader = show
+    );
+  }
 }
