@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-cad-questoes',
@@ -7,9 +8,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadQuestoesComponent implements OnInit {
 
-  constructor() { }
+  questionForm = this.fb.group({
+    title: [null],
+    img_path: [null],
+    support: [null],
+    command: [null],
+    answer_a: [null],
+    answer_b: [null],
+    answer_c: [null],
+    answer_d: [null],
+    answer_e: [null],
+    correct_answer: [null],
+    author_id: [null],
+    dificulty_level: [null]
+  });
+
+  constructor(
+    private fb: FormBuilder
+  ) { }
 
   ngOnInit() {
+  }
+
+  submit() {
+    if (this.questionForm.valid) {
+      console.log('Submit(): Form Válido');
+    }
   }
 
 }
