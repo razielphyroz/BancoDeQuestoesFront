@@ -10,7 +10,7 @@ import { AuthService } from './services/auth.service';
 export class AppComponent {
 
   title = 'BancoDeQuestoesFront';
-  showHeader = false;
+  showHeader = true;
 
   constructor(
     private authService: AuthService) {

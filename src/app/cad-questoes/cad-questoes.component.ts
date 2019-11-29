@@ -18,9 +18,7 @@ export class CadQuestoesComponent implements OnInit {
     answer_c: [null],
     answer_d: [null],
     answer_e: [null],
-    correct_answer: [null],
-    author_id: [null],
-    dificulty_level: [null]
+    correct_answer: [null]
   });
 
   constructor(

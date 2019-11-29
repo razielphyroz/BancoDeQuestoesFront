@@ -23,11 +23,39 @@ body {
   min-height: 100%;
 
   .container {
-    padding: 110px 20px 50px 20px;
-    background-color: white;
+    padding: 120px 40px 100px 40px;
+    background-color: rgb(246, 246, 246);
     width: 80%;
-    opacity: 0.9;
     min-height: 100%;
+
+    button {
+      background-color: rgb(184, 184, 184);
+      font-size: 20px;
+      border-radius: 5px;
+      height: 50px;
+      width: 150px;
+    }
+
+    input {
+      border: 1px solid gray;
+      border-radius: 3px;
+      height: 35px;
+      width: 60%;
+      padding: 0px 5px;    
+    }
+  
+    textarea {
+      border: 1px solid gray;
+      border-radius: 3px;
+      height: 35px;
+      width: 60%;
+      padding: 0px 5px;
+      resize: vertical;
+      min-height: 35px;
+      max-height: 200px;
+      font-size: 15px;
+    }
+  
   }
 }
 
