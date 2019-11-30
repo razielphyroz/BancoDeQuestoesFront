@@ -1,14 +1,17 @@
 export interface Question {
 
+  id?: string;
   title: string;
-  img_path: string;
+  img_path?: string;
   support: string;
   command: string;
-  answer_a: string;
-  answer_b: string;
-  answer_c: string;
-  answer_d: string;
-  answer_e: string;
+  answers: {
+    a: string;
+    b: string;
+    c: string;
+    d: string;
+    e: string;
+  };
   correct_answer: string;
   author_id: string;
   dificulty_level: string;
