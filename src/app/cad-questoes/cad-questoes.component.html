@@ -1,34 +1,34 @@
 <div class="main-div">
   <div class="container">
-    <h1>Cadastre uma Questão</h1>
+    <h2>Cadastre uma Questão</h2>
 
     <form [formGroup]="questionForm">
       <span>Título</span>
-      <textarea rows="5" cols="33" formControlName="title"></textarea>
+      <textarea formControlName="title"></textarea>
 
       <span>Suporte</span>
-      <textarea rows="5" cols="33" formControlName="support"></textarea>
+      <textarea formControlName="support"></textarea>
 
       <span>Comando</span>
-      <textarea rows="5" cols="33" formControlName="command"></textarea>
+      <textarea formControlName="command"></textarea>
 
       <span>Alternativa A</span>
-      <textarea rows="5" cols="33" formControlName="answer_a"></textarea>
+      <textarea formControlName="answer_a"></textarea>
 
       <span>Alternativa B</span>
-      <textarea rows="5" cols="33" formControlName="answer_b"></textarea>
+      <textarea formControlName="answer_b"></textarea>
 
       <span>Alternativa C</span>
-      <textarea rows="5" cols="33" formControlName="answer_c"></textarea>
+      <textarea formControlName="answer_c"></textarea>
       
       <span>Alternativa D</span>
-      <textarea rows="5" cols="33" formControlName="answer_d"></textarea>
+      <textarea formControlName="answer_d"></textarea>
 
       <span>Alternativa E</span>
-      <textarea rows="5" cols="33" formControlName="answer_e"></textarea>
+      <textarea formControlName="answer_e"></textarea>
 
       <span>Gabarito:</span>
-      <textarea rows="5" cols="33" formControlName="correct_answer"></textarea>
+      <textarea formControlName="correct_answer"></textarea>
     </form>
 
     <button (click)="submit()">Cadastrar</button>

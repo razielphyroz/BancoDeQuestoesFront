@@ -23,9 +23,9 @@ body {
   min-height: 100%;
 
   .container {
-    padding: 120px 40px 100px 40px;
+    padding: 120px 40px 0px 40px;
     background-color: rgb(246, 246, 246);
-    width: 80%;
+    width: 70%;
     min-height: 100%;
 
     button {
@@ -35,12 +35,16 @@ body {
       height: 50px;
       width: 150px;
     }
+    
+    button:hover {
+      cursor: pointer;
+    }
 
     input {
       border: 1px solid gray;
       border-radius: 3px;
       height: 35px;
-      width: 60%;
+      width: 50%;
       padding: 0px 5px;    
     }
   
@@ -48,7 +52,7 @@ body {
       border: 1px solid gray;
       border-radius: 3px;
       height: 35px;
-      width: 60%;
+      width: 50%;
       padding: 0px 5px;
       resize: vertical;
       min-height: 35px;
