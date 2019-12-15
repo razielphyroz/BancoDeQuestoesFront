@@ -23,19 +23,25 @@ body {
   min-height: 100%;
 
   .container {
-    padding: 120px 40px 0px 40px;
+    padding: 120px 40px 50px 40px;
     background-color: rgb(246, 246, 246);
     width: 70%;
     min-height: 100%;
+    box-shadow: 0px 1px 10px 6px rgba(0,0,0,0.44);
 
     button {
-      background-color: rgb(184, 184, 184);
+      background-color: black(184, 184, 184);
       font-size: 20px;
       border-radius: 5px;
       height: 50px;
       width: 150px;
+     
     }
-    
+
+    button:hover {
+      background-color: rgb(179, 179, 179);
+    }
+
     button:hover {
       cursor: pointer;
     }
