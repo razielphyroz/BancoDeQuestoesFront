@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from './services/auth.service';
+import { UserService } from './services/user.service';
 
 @Component({
   selector: 'app-root',
@@ -10,13 +11,15 @@ import { AuthService } from './services/auth.service';
 export class AppComponent {
 
   title = 'BancoDeQuestoesFront';
-  showHeader = true;
+  showHeader = false;
 
   constructor(
-    private authService: AuthService) {
-  }
+    private authService: AuthService,
+    private userService: UserService
+  ) {}
 
   ngOnInit() {
+    localStorage.clear();
     this.authService.showMenuEmitter.subscribe(
       show => this.showHeader = show
     );
