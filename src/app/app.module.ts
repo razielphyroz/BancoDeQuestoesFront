@@ -12,6 +12,8 @@ import { CadQuestoesComponent } from './cad-questoes/cad-questoes.component';
 import { ValQuestoesComponent } from './val-questoes/val-questoes.component';
 import { BuscaQuestoesComponent } from './busca-questoes/busca-questoes.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
