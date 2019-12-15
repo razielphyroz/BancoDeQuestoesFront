@@ -5,20 +5,35 @@
   <div class="logo"></div>
 
   <nav class="nav-menu">
-      <button routerLink="pesquisa-questao">
-          <span class="fa fa-search"></span>
-          <span>Pesquisar Questões</span>
-        </button>
 
-      <button routerLink="cadastro-questao">
+      <button routerLink="home">
+        <span class="fa fa-home"></span>
+        <span>Página Incial</span>
+      </button>
+
+      <button routerLink="pesquisa-questao">
+        <span class="fa fa-search"></span>
+        <span>Pesquisar Questões</span>
+      </button>
+
+      <button routerLink="cadastro-questao" *ngIf="us.isDocent()">
         <span class="fa fa-pencil-square-o"></span>
         <span>Cadastrar Questões</span>
       </button>
       
-      <button routerLink="validacao-questao">
+      <button routerLink="validacao-questao" *ngIf="us.isValidator()">
         <span class="fa fa-check-square-o"></span>
         <span>Validar Questões</span>
       </button>
+
+
   </nav>
-  <div class="user-profile"></div>
+
+  <div class="right-content">
+    <div class="user-profile"></div>
+    <button class="logout" (click)="logout()" title="Logout">
+      <span class="fa fa-sign-out"></span>
+    </button>
+  </div>
+
 </div>

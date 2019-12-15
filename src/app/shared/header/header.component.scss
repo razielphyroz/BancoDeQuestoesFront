@@ -5,14 +5,14 @@
 }
 
 .main-header-div {
-  padding: 0px 25px;
+  padding-left: 25px;
   border: 2px solid rgb(6, 107, 6);
   background: #036b2e;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 90px;
+  height: 75px;
   position: fixed;
   z-index: 10;
 
@@ -26,9 +26,6 @@
     background-repeat: no-repeat;
     height: 50%;
     width: 235px;
-  }
-  .logo:hover {
-    cursor: pointer;
   }
 
   .nav-menu { 
@@ -49,8 +46,6 @@
       text-align: center;
       height: 100%;
       width: 170px;
-
-
 
       span {
         font-size: 17px;
@@ -75,15 +70,43 @@
     }
   }
 
-  .user-profile {
-    background-image: url(src/assets/images/fake-user.png);
-    height: auto;
-    width: auto;
-    background-size: contain;
-    
-    border: 1px solid rgb(224, 224, 224);
-    border-radius: 50%;
-    height: 75px;
-    width: 75px;
+  .right-content {
+    display: flex;
+    height: 100%;
+
+    .logout {
+      align-self: center;
+      border: 1px solid red;
+      height: 70%;
+      width: 50px;
+      border: none;
+      background-color: transparent;
+      border-radius: 3px;
+
+      span {
+        font-size: 17px;
+        color: rgb(224, 224, 224);
+      }
+
+      .fa {
+        font-size: 25px;
+      }
+    }
+
+    .logout:hover {
+      cursor: pointer;
+    }
+
+    .user-profile {
+      background-image: url(src/assets/images/fake-user.png);
+      height: auto;
+      width: auto;
+      background-size: contain;
+      
+      border: 1px solid rgb(224, 224, 224);
+      border-radius: 50%;
+      height: 75px;
+      width: 75px;
+    }
   }
 }
