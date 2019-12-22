@@ -27,8 +27,15 @@
       <span>Alternativa E</span>
       <textarea formControlName="answer_e"></textarea>
 
-      <span>Gabarito:</span>
-      <textarea formControlName="correct_answer"></textarea>
+      <span>Resposta Correta:</span>
+      <select formControlName="correct_answer">
+          <option value="a" selected>Alternativa A</option>
+          <option value="b">Alternativa B</option>
+          <option value="c">Alternativa C</option>
+          <option value="d">Alternativa D</option>
+          <option value="d">Alternativa E</option>
+      </select>
+
     </form>
 
     <button (click)="submit()">Cadastrar</button>
